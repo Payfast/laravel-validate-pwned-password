@@ -1,0 +1,28 @@
+{
+  "name": "payfast/laravel-validate-pwned-password",
+  "description": "Adds Laravel validator rule to check if a password has been pwned from https://haveibeenpwned.com/API/v2",
+  "license": "GPL-3.0-only",
+  "type": "package",
+  "authors": [
+    {
+      "name": "Charl Retief",
+      "email": "charl.retief@payfast.co.za"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PayFast\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PayFast\\Providers\\PwnedPasswordServiceProvider"
+      ]
+    }
+  }
+}
